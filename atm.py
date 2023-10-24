@@ -76,6 +76,8 @@ if __name__ == "__main__":
             check_balance(current_customer)
         elif (option == 4):
             exit()
+
+
             break;
 
 
