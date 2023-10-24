@@ -47,7 +47,7 @@ if __name__ == "__main__":
     list_of_customers = []
     list_of_customers.append(CardHolder("3456789088893033", 1134, "John", "Grif", 200))
     list_of_customers.append(CardHolder("3456789088878889", 2234, "Dawn", "smift", 200))
-    list_of_customers.append(CardHolder("3456789088444889", 3334, "eric", "liu", 200))
+    list_of_customers.append(CardHolder("3456789088444889", 3634, "eric", "liu", 200))
     # input customer for pin
     while True:
         try:
