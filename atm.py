@@ -36,13 +36,12 @@ def withdraw(CardHolder):
 def check_balance(CardHolder):
     print(f"Your current balance is : {CardHolder.get_balance()}")
 
+
 def exit():
     print("you have already exit your account")
 
 
-
 if __name__ == "__main__":
-
 
     list_of_customers = []
     list_of_customers.append(CardHolder("3456789088893033", 1134, "John", "Grif", 200))
@@ -53,9 +52,8 @@ if __name__ == "__main__":
         try:
             customer_pin = int(input("Please enter your pin：").strip())
 
-
-            customer= [user for user in list_of_customers if user.get_pin() == customer_pin]
-            if(len(customer)> 0):
+            customer = [user for user in list_of_customers if user.get_pin() == customer_pin]
+            if (len(customer) > 0):
                 current_customer = customer[0]
                 break;
             else:
@@ -64,27 +62,21 @@ if __name__ == "__main__":
         except:
             print("Invalid PIN. Please try again")
 
-
-
     while True:
         print_menu()
         try:
             option = int(input())
         except:
             print("Invalid input, Please try again")
-        if(option == 1):
+        if (option == 1):
             deposit(current_customer)
-        elif(option == 2):
+        elif (option == 2):
             withdraw(current_customer)
-        elif(option == 3):
+        elif (option == 3):
             check_balance(current_customer)
-        elif(option == 4):
+        elif (option == 4):
             exit()
             break;
-
-
-
-
 
     # while true:
     #     try:

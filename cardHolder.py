@@ -26,7 +26,7 @@ class CardHolder:
         self.cardnum = newVal
 
     def set_pin(self, newVal):
-         self.pin =  newVal
+        self.pin = newVal
 
     def set_firstname(self, newVal):
         self.firstname = newVal
@@ -38,7 +38,6 @@ class CardHolder:
         self.balance = newVal
 
     def print_out(self):
-
         print(f"Card #: {self.cardnum}")
         print(f"Pin: {self.pin}")
         print(f"First Name: {self.firstname}")
